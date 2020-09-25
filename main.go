@@ -38,7 +38,8 @@ func main() {
 				sportcenter.ZHname = s.Text()
 				uri, _ := s.Attr("href")
 				sportcenter.Uri = uri
-				data = append(data, sportcenter)
+				if sportcenter.ZHname!="南區青少年活動中心"{
+					data = append(data, sportcenter)}
 			}
 
 		})
